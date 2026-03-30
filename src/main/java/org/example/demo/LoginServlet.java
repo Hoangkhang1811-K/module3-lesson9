@@ -18,6 +18,7 @@ public class LoginServlet extends HttpServlet {
         writer.println("<html>");
         if (username.equals("admin") && password.equals("123456")) {
             writer.println("<h1> Welcome" +username+" Admin!</h1>");
+            writer.println("<a href=\"covertServlet.jsp\">Covert Currency</a>");
         }else {
             writer.println("Login Error");
         }
